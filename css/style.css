@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  background-color: #c8c8c8;
+  background-color: rgba(175, 172, 172, 0.767);
 }
 
 .card__text {
@@ -41,7 +41,7 @@ body {
   position: absolute;
   right: 0;
   top: 0;
-  background-image: url(img\chevron-up.svg);
+  background-image: url(../img/chevron-up.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -59,13 +59,13 @@ body {
 .location__row:first-child {
   overflow: hidden;
   border-radius: 4px 4px 0 0;
-  border: solid 1px #D6D6D6;
+  border: 1px solid #D6D6D6;
 }
 
 .location__row:last-child {
   overflow: hidden;
   border-radius: 0 0 4px 4px;
-  border: solid 1px #D6D6D6;
+  border: 1px solid #D6D6D6;
   border-top: none;
 }
 
@@ -103,8 +103,9 @@ input {
 }
 
 .radio__group {
-  display: block;
+  display: flex;
   cursor: pointer;
+  margin-bottom: 15px;   /* !!! */
 }
 
 .radio__group:not(:last-child) {
@@ -123,20 +124,21 @@ input {
   height: 20px;
   background-color: #fff;
   border-radius: 50%;
-  border: solid 1px #777;
+  border: 1px solid  #777;
 }
 
 .radio__title {
   font-size: 16px;
   line-height: 1.18;
   color: #000;
+  margin-left: 10px; /* !!! */
 }
 
 .term:checked + .radio__fake {
   background-color: #FFE074;
 }
 
-.term:checked + .radio__title {
+.term:checked + .radio__fake + .radio__title {
   font-weight: 700;
 }
 
@@ -153,15 +155,16 @@ input {
 }
 
 .checkbox__group {
-  display: block;
+  display: flex;
   cursor: pointer;
+  margin-bottom: 15px; /* !!! */
 }
 
 .checkbox__group:not(:last-child) {
   margin-bottom: 15px;
 }
 
-.optipns {
+.options {
   display: none;
 }
 
@@ -180,6 +183,7 @@ input {
   font-size: 16px;
   line-height: 1.18;
   color: #000;
+  margin-left: 10px; /* !!! */
 }
 
 .options:checked + .checkbox__fake {
@@ -198,7 +202,7 @@ input {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: url('/img/check.svg');
+  background-image: url(../img/check.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -217,6 +221,7 @@ input {
   color: #4290c9;
   padding: 0;
   cursor: pointer;
+  transition: all 0.2s ease-in-out; /* !!! */
 }
 
 .button:hover {
@@ -224,6 +229,7 @@ input {
 }
 
 .toggle {
+  display: flex;
   cursor: pointer;
 }
 
