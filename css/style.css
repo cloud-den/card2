@@ -109,7 +109,7 @@ input {
 }
 
 .radio__group:not(:last-child) {
-  margin-bottom: 15px;
+  margin-bottom: 0.1px;
 }
 
 .term {
@@ -161,7 +161,7 @@ input {
 }
 
 .checkbox__group:not(:last-child) {
-  margin-bottom: 15px;
+  margin-bottom: 0.1px;
 }
 
 .options {
